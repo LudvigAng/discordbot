@@ -1,0 +1,13 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "projekt programmering 2",
+  "main": "bot.js",
+  "author": "Ludvig",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "npm": "^5.7.1",
+    "opusscript": "0.0.6"
+  }
+}
