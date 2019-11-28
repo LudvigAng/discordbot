@@ -11,10 +11,10 @@ module.exports.run = async (bot, message, args) => {
 
     let role = message.guild.roles.find(r => r.name === "DB Muted");
 
-    if(!role || !toMute.roles.has(role.id)) return message.channel.send("Användaren är inte mutad!");
+    if(!role || !toMute.roles.has(role.id)) return message.channel.send(toMute + " är inte mutad!");
 
     await toMute.removeRole(role);
-    message.channel.send("Användare inte mutad längre.");
+    message.channel.send(toMute + " inte mutad längre.");
 
     return;
 }

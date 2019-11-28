@@ -29,10 +29,10 @@ module.exports.run = async (bot, message, args) => {
               }
             }
 
-            if(toMute.roles.has(role.id)) return message.channel.send("Användaren är redan mutad!");
+            if(toMute.roles.has(role.id)) return message.channel.send(toMute + " är redan mutad!");
 
             await toMute.addRole(role);
-            message.channel.send("Användare mutad.");
+            message.channel.send(toMute + " mutad.");
 
             return;
 }
